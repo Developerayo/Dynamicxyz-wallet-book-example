@@ -2102,6 +2102,11 @@
     "starknet" "3.19.0"
     "tslib" "2.4.1"
 
+"@dynamic-labs/sdk-api@^0.0.173":
+  "integrity" "sha512-Bzw6lMJ8F+fCR7/GLUxG9cRvaE3bA7GfJzy2mhvo8tPL3dHKAV6DpJxbuvS3QSO6gfw/HBex+b1Fm+qST0DKdg=="
+  "resolved" "https://registry.npmjs.org/@dynamic-labs/sdk-api/-/sdk-api-0.0.173.tgz"
+  "version" "0.0.173"
+
 "@dynamic-labs/sdk-api@0.0.171":
   "integrity" "sha512-xc84tu7KUCMFLr27MeOekKPWULCXUypaMZUI+ktW3CKnxv8mjEr/HmLztujk9fAESXr0JUkT6NJSGwQ7KXLFcg=="
   "resolved" "https://registry.npmjs.org/@dynamic-labs/sdk-api/-/sdk-api-0.0.171.tgz"

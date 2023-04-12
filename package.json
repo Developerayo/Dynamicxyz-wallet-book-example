@@ -12,6 +12,7 @@
     "@chakra-ui/react": "2.5.5",
     "@dynamic-labs/iconic": "0.1.16",
     "@dynamic-labs/multi-wallet": "^0.15.26",
+    "@dynamic-labs/sdk-api": "^0.0.173",
     "@dynamic-labs/wallet-book": "0.0.10",
     "@emotion/memoize": "0.7.5",
     "@emotion/react": "11.10.6",
