@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, VStack, Heading } from '@chakra-ui/react';
-import { ethers } from 'ethers';
+import { Web3Provider } from '@ethersproject/providers';
 import SdkApi from '@dynamic-labs/sdk-api';
 
 function Login({ onLogin }) {
@@ -8,7 +8,7 @@ function Login({ onLogin }) {
 
   React.useEffect(() => {
     if (window.ethereum) {
-      setProvider(new ethers.providers.Web3Provider(window.ethereum));
+        setProvider(new ethers.Web3Provider(window.ethereum));
     }
   }, []);
 

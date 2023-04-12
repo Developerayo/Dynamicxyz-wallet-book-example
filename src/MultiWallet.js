@@ -1,4 +1,4 @@
-import { ethers } from 'ethers';
+import { Wallet } from 'ethers';
 
 class MultiWallet {
   constructor() {
@@ -6,7 +6,7 @@ class MultiWallet {
   }
 
   addWallet(privateKey) {
-    const wallet = new ethers.Wallet(privateKey);
+    const wallet = new Wallet(privateKey);
     this.wallets.push(wallet);
   }
 
