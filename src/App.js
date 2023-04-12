@@ -2,9 +2,9 @@ import React from 'react';
 import { Box, VStack, Button, Heading, Text, IconButton } from '@chakra-ui/react';
 import { AddIcon, DeleteIcon } from '@chakra-ui/icons';
 import { ethers } from 'ethers';
-import MultiWallet from '@dynamic-labs/multi-wallet';
+import MultiWallet from './MultiWallet';
 
-function WalletItem({ wallet, onDelete }) {
+function DynamicWallet({ wallet, onDelete }) {
   return (
     <Box
       borderWidth="1px"
@@ -14,7 +14,7 @@ function WalletItem({ wallet, onDelete }) {
       backgroundColor="white"
       width="100%"
     >
-      <Text fontWeight="bold">Address:</Text>
+      <Text fontWeight="bold">Wallet Address:</Text>
       <Text>{wallet.address}</Text>
       <Text fontWeight="bold">Private Key:</Text>
       <Text>{wallet.privateKey}</Text>
@@ -48,12 +48,12 @@ function App() {
   return (
     <Box>
       <VStack spacing={4} paddingTop="8" alignItems="center">
-        <Heading>XYZ Wallet-Book</Heading>
+        <Heading>DynamicXYZ Wallet-Book with @Multi-Wallet</Heading>
         <Button leftIcon={<AddIcon />} onClick={addWallet} colorScheme="teal">
-          Add Wallet
+          Initate Wallet
         </Button>
         {wallets.map((wallet, index) => (
-          <WalletItem key={index} wallet={wallet} onDelete={() => removeWallet(wallet)} />
+          <DynamicWallet key={index} wallet={wallet} onDelete={() => removeWallet(wallet)} />
         ))}
       </VStack>
     </Box>
